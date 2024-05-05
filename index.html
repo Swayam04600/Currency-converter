@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="converter">
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" class="input-field" placeholder="Enter amount" required />
+            </div>
+            <div class="form-group">
+                <label for="fromCurrency">From:</label>
+                <select id="fromCurrency" class="input-field">
+                    <!-- Add options for different currencies -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="toCurrency">To:</label>
+                <select id="toCurrency" class="input-field">
+                    <!-- Add options for different currencies -->
+                </select>
+            </div>
+            <button class="convert-btn" onclick="convertCurrency()">Convert</button>
+        </div>
+        <div id="result" class="result">Result will be displayed here.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
